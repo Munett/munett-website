@@ -114,8 +114,8 @@ gulp.task('server', function() {
   gulp.watch(paths.imgFiles, gulp.series('images'));                  // Watch images
 });
 
-// build - Builds site anew.
-gulp.task('build', gulp.series('styles', 'scripts', 'images'));
+// build - Builds assets
+gulp.task('build', gulp.series('styles', 'scripts'));
 
 // Develop Task
 gulp.task('develop', gulp.series('build', 'server'));
