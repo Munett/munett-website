@@ -286,6 +286,26 @@ body {
 .mainNav-item:last-child {
   margin-right: 0;
 }
+.slider {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff6347;
+}
+.mySlider-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slide-1 {
+  background-image: url("../img/api.png");
+  background-size: cover;
+}
 .social-icon {
   margin-right: 2rem;
 }
