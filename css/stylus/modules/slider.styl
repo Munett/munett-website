@@ -1,13 +1,14 @@
 .slider 
-  width 100%
-  height 100vh
-  background-color tomato
-
-.mySlider-slide 
-  display flex
-  justify-content center
+  display flex 
   align-items center
-
-.slide-1 
-  background-image url(../img/api.png)
-  background-size cover
+  lost-column 7/12
+  position relative
+  
+  &:before
+    position absolute
+    width 100%
+    height 50%
+    transform translateY(5%) translateX(5%)
+    content ''
+    border 2px solid white
+    border-radius 5px

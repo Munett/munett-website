@@ -6,10 +6,25 @@
   justify-content center
     
 .demo 
-  wrapped(80%)
+  wrapped()
   height 100vh
   display flex
+  justify-content space-between
   background-image: linear-gradient(42deg, #00D6BE 0%, #00AC89 100%, #00AC89 100%);
+  
+  &-info 
+    display flex 
+    flex-direction column
+    justify-content center
+    lost-column 4/12
+    
+  &-actions 
+    display flex 
+    flex-direction column
+    justify-content space-around
+    margin-top 3rem
+    height 20%
+    width 60%
   
 .quote
   display flex 
