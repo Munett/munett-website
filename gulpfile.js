@@ -67,7 +67,7 @@ gulp.task('styles', gulp.series('stylus', 'postcss', 'mincss', 'styles:watch'));
 // concatjs - Concatenates *.js files.
 gulp.task ('concatjs', function() {
   return gulp.src([paths.jsVendor, paths.jsModules])
-    .pipe(concat(paths.jsMain))
+    .pipe(concat('main.js'))
     .pipe(gulp.dest(paths.jsFolder));
 });
 
