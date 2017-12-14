@@ -1,17 +1,21 @@
-.mainNav
+.nav
   display flex
   min-width 500px
   justify-content space-between
   align-items center
   
-.mainNav-item
+  +below(55rem)
+    display none
+  
+.nav-item
   text-transform uppercase
-  font-family 'acto', sans-serif
-  font-weight 600
+  font-size 14px
   color white
   letter-spacing 2px
   border 2px solid transparent
-  transition 350ms all ease-in-out
+  
+  &--active
+    font-weight 600
   
   &:last-child
     margin-right 0

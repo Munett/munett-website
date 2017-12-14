@@ -1,17 +1,28 @@
 .main
   wrapped()
-  height 120vh
+  height 100vh
   display flex
   align-items center
   justify-content space-between
   background url('/img/bg-main.svg') no-repeat
   background-size cover
   
+  +below(75rem)
+    wrapped(95%)
+  
   &-image
-    lost-column 6/12
+    lost-column 5/12
+    
+    +below(55rem)
+      display none
   
   &-info 
-    lost-column 5/12
+    lost-column 6/12
+    
+    +below(55rem)
+      lost-column 3/12
+      text-align center
+      width 100%
     
 .about 
   display flex 
@@ -25,6 +36,10 @@
     display flex
     align-items baseline
     margin-top 1rem
+    
+    +below(75rem)
+      flex-direction column
+      align-items center
     
     &-validate
       display flex
@@ -40,11 +55,20 @@
   align-items center
   background-image: linear-gradient(42deg, #00D6BE 0%, #00AC89 100%, #00AC89 100%);
   
+  +below(75rem)
+    flex-direction column
+    justify-content center
+    width 100%
+    text-align center
+  
   &-info 
     display flex 
     flex-direction column
     justify-content center
     lost-column 4/12
+    
+    +below(75rem)
+      margin-bottom 3rem
     
   &-actions 
     display flex 
@@ -52,6 +76,9 @@
     justify-content space-around
     margin-top 3rem
     width 60%
+    
+    +below(75rem)
+      width 100%
   
 .quote
   display flex 

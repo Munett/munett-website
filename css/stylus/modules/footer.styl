@@ -7,9 +7,15 @@
   background-color $primary
   align-items baseline
   
+  +below(75rem)
+    wrapped(95%)
+  
   &-logo
     display flex
     flex-direction column
+    
+    +below(55rem)
+      display none
   
   &-links
     display flex

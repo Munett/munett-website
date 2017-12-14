@@ -89,10 +89,10 @@ a {
   color: #fff;
 }
 .text-center {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 200;
+  line-height: 30px;
   text-align: center;
-  max-width: 600px;
 }
 .text-left {
   color: #fff;
@@ -113,7 +113,7 @@ a {
 .title--main {
   font-weight: 200;
   color: #fff;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
 }
 .title--big {
@@ -122,7 +122,7 @@ a {
   font-size: 3rem;
 }
 .subtitle {
-  color: #007c5a;
+  color: #00ac89;
   font-size: 1rem;
   margin: 1rem 0 3rem 0;
 }
@@ -134,28 +134,25 @@ body {
   color: #003728;
 }
 .btn {
-  font-family: 'acto', sans-serif;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.5rem;
   text-decoration: none;
   font-size: 14px;
-  letter-spacing: 0.58px;
   background-color: #fff;
   border-radius: 4px;
   color: #003728;
   margin-top: 1rem;
+  -webkit-box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.19);
+          box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.19);
 }
 .btn--active {
   background-color: #007c5a;
   color: #fff;
 }
 .btn--primary {
-  padding: 0.5rem 2rem;
   color: #fff;
   text-transform: uppercase;
   background-color: #00ac89;
   border-radius: 4rem;
-  -webkit-box-shadow: 0 2px 4px rgba(50,50,93,0.1);
-          box-shadow: 0 2px 4px rgba(50,50,93,0.1);
 }
 .btn--primary:hover {
   background-color: #a2e3d4;
@@ -164,15 +161,12 @@ body {
   color: #003728;
 }
 .btn--secondary {
-  padding: 0.5rem 2rem;
   color: #fff;
   text-transform: uppercase;
   background-color: #003728;
   -webkit-transition: 350ms all ease-in-out;
   transition: 350ms all ease-in-out;
   border-radius: 4rem;
-  -webkit-box-shadow: 0 2px 4px rgba(50,50,93,0.1);
-          box-shadow: 0 2px 4px rgba(50,50,93,0.1);
   margin-top: 0;
 }
 .btn--secondary:hover {
@@ -197,6 +191,12 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media only screen and (max-width: 75rem) {
+  .footer {
+    padding-left: calc(50% - (95% / 2));
+    padding-right: calc(50% - (95% / 2));
+  }
+}
 .footer-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,6 +205,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media only screen and (max-width: 55rem) {
+  .footer-logo {
+    display: none;
+  }
 }
 .footer-links {
   display: -webkit-box;
@@ -258,7 +263,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.mainNav {
+@media only screen and (max-width: 75rem) {
+  .mainHeader {
+    padding-left: calc(50% - (95% / 2));
+    padding-right: calc(50% - (95% / 2));
+  }
+}
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,17 +281,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.mainNav-item {
+@media only screen and (max-width: 55rem) {
+  .nav {
+    display: none;
+  }
+}
+.nav-item {
   text-transform: uppercase;
-  font-family: 'acto', sans-serif;
-  font-weight: 600;
+  font-size: 14px;
   color: #fff;
   letter-spacing: 2px;
   border: 2px solid transparent;
-  -webkit-transition: 350ms all ease-in-out;
-  transition: 350ms all ease-in-out;
 }
-.mainNav-item:last-child {
+.nav-item--active {
+  font-weight: 600;
+}
+.nav-item:last-child {
   margin-right: 0;
 }
 .slider {
@@ -332,7 +348,7 @@ body {
 .main {
   padding-left: calc(50% - (1336px / 2));
   padding-right: calc(50% - (1336px / 2));
-  height: 120vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,8 +361,14 @@ body {
   background: url("/img/bg-main.svg") no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 75rem) {
+  .main {
+    padding-left: calc(50% - (95% / 2));
+    padding-right: calc(50% - (95% / 2));
+  }
+}
 .main-image {
-  width: calc(99.9% * 6/12 - (30px - 30px * 6/12));
+  width: calc(99.9% * 5/12 - (30px - 30px * 5/12));
 }
 .main-image:nth-child(1n) {
   float: left;
@@ -363,8 +385,13 @@ body {
 .main-image:nth-child(12n + 1) {
   clear: both;
 }
+@media only screen and (max-width: 55rem) {
+  .main-image {
+    display: none;
+  }
+}
 .main-info {
-  width: calc(99.9% * 5/12 - (30px - 30px * 5/12));
+  width: calc(99.9% * 6/12 - (30px - 30px * 6/12));
 }
 .main-info:nth-child(1n) {
   float: left;
@@ -380,6 +407,28 @@ body {
 }
 .main-info:nth-child(12n + 1) {
   clear: both;
+}
+@media only screen and (max-width: 55rem) {
+  .main-info {
+    width: calc(99.9% * 3/12 - (30px - 30px * 3/12));
+    text-align: center;
+    width: 100%;
+  }
+  .main-info:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+  }
+  .main-info:last-child {
+    margin-right: 0;
+  }
+  .main-info:nth-child(12n) {
+    margin-right: 0;
+    float: right;
+  }
+  .main-info:nth-child(12n + 1) {
+    clear: both;
+  }
 }
 .about {
   display: -webkit-box;
@@ -406,6 +455,17 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-top: 1rem;
+}
+@media only screen and (max-width: 75rem) {
+  .documentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .documentation-validate {
   display: -webkit-box;
@@ -435,6 +495,19 @@ body {
           align-items: center;
   background-image: linear-gradient(42deg, #00d6be 0%, #00ac89 100%, #00ac89 100%);
 }
+@media only screen and (max-width: 75rem) {
+  .demo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
 .demo-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,6 +536,11 @@ body {
 .demo-info:nth-child(12n + 1) {
   clear: both;
 }
+@media only screen and (max-width: 75rem) {
+  .demo-info {
+    margin-bottom: 3rem;
+  }
+}
 .demo-actions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,6 +553,11 @@ body {
       justify-content: space-around;
   margin-top: 3rem;
   width: 60%;
+}
+@media only screen and (max-width: 75rem) {
+  .demo-actions {
+    width: 100%;
+  }
 }
 .quote {
   display: -webkit-box;
