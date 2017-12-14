@@ -1,15 +1,43 @@
+.main
+  wrapped()
+  height 120vh
+  display flex
+  align-items center
+  justify-content space-between
+  background url('/img/bg-main.svg') no-repeat
+  background-size cover
+  
+  &-image
+    lost-column 6/12
+  
+  &-info 
+    lost-column 5/12
+    
 .about 
   display flex 
   flex-direction column
   align-items center
   height 100vh
   justify-content center
+  margin 4rem 0
+  
+.documentation
+    display flex
+    align-items baseline
+    margin-top 1rem
+    
+    &-validate
+      display flex
+      flex-direction column
+      padding 2rem 3rem
+      align-items center
     
 .demo 
   wrapped()
   height 100vh
   display flex
   justify-content space-between
+  align-items center
   background-image: linear-gradient(42deg, #00D6BE 0%, #00AC89 100%, #00AC89 100%);
   
   &-info 
@@ -23,7 +51,6 @@
     flex-direction column
     justify-content space-around
     margin-top 3rem
-    height 20%
     width 60%
   
 .quote
