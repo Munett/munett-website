@@ -1,0 +1,41 @@
+.unslider
+  display flex
+  align-items stretch
+  position relative
+  
+  .unslider-carousel
+    height 100%
+    
+  .gist .gist-file
+    margin-bottom 0
+    border none
+    border-radius 0
+    
+    .gist-data
+      border-radius 0
+    
+.unslider-nav
+  position absolute
+  top 0
+  right 0
+  left 0
+  background-color white
+  border-bottom 1px solid $green-accent
+  border-radius 4px 4px 0 0
+  overflow hidden
+  
+  ol
+    display flex
+    
+    li
+      padding 1rem 2rem
+      font-size 14px
+      color $black
+      cursor pointer
+      border-right 1px solid $green-accent
+      transition 300ms all ease-in-out
+      
+      &.unslider-active
+      &:hover
+        background-color $primary-dark
+        color white

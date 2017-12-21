@@ -1,109 +1,162 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="viewport" content="width=device-width">
-      <title>Münett</title>
-      <meta name="description" content="Münett">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-      <header class="mainHeader">
-          <a class="logo" href="#0">
-            <img src="img/logo.svg" alt="">
-          </a>
-          <nav class="mainNav">
-            <a class="mainNav-item" href="/">Home</a>
-            <a class="mainNav-item" href="#events">Documentation</a>
-            <button class="mainNav-btn" type="button" name="button">Get a quotes</button>
-          </nav>
-      </header>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Münett</title>
+  <meta name="description" content="Münett">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="css/main.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="mainHeader">
+    <a class="mainHeader-logo" href="./">
+      <svg width="231" height="50" viewBox="0 0 231 50" xmlns="http://www.w3.org/2000/svg"><title>Logo</title><path d="M33.317 11.186h10.062v38.43h-6.488v-30.02L23.477 46.262h-3.629L6.487 19.596v30.02H0v-38.43h10.115L21.717 35.32l11.6-24.135zm85.654 0h6.487v38.43h-7.038l-21.772-28.04v28.04h-6.487v-38.43h6.487l22.323 28.698V11.186zm13.604 0h27.656v6.101h-21.167v10.171h18.417v5.774h-18.417v10.28h21.167v6.104h-27.656v-38.43zm34.773 0h29.798v5.936h-11.654v32.494h-6.489V17.122h-11.655v-5.936zm33.357 0h29.798v5.936H218.85v32.494h-6.488V17.122h-11.656v-5.936zM59.622 40.819c1.76 2.053 4.142 3.08 7.148 3.08 3.005 0 5.388-1.027 7.148-3.08 1.759-2.052 2.639-4.838 2.639-8.357V11.185h6.487v21.552c0 5.535-1.521 9.796-4.563 12.782C75.438 48.51 71.534 50 66.77 50c-4.765 0-8.668-1.492-11.712-4.48-3.041-2.987-4.562-7.248-4.562-12.783V11.185h6.488v21.277c0 3.519.878 6.305 2.638 8.357zm20.12-33.702c-.984 0-1.814-.348-2.488-1.042-.676-.695-1.012-1.533-1.012-2.517a3.43 3.43 0 0 1 1.041-2.517A3.425 3.425 0 0 1 79.8 0c.984 0 1.824.338 2.517 1.012.695.676 1.042 1.504 1.042 2.489 0 .983-.358 1.832-1.07 2.545-.715.715-1.562 1.07-2.546 1.07zm-26.002 0a3.433 3.433 0 0 1-2.518-1.042 3.433 3.433 0 0 1-1.041-2.517 3.43 3.43 0 0 1 1.041-2.517A3.428 3.428 0 0 1 53.74 0c.984 0 1.822.338 2.516 1.012.695.676 1.043 1.504 1.043 2.489 0 .983-.348 1.832-1.043 2.545-.694.715-1.532 1.07-2.516 1.07z" fill="#000" fill-rule="evenodd"/></svg>
+    </a>
 
-      <main>
-        <div class="main">
-          <h1>Fast & Secure Identity verification</h1>
-          <p>Munett develops state-of-the-art technology to push the technology boundries for fintech companies.</p>
-        </div>
-        <img src="" alt="">
-      </main>
+    <nav class="nav">
+      <!-- <a class="nav-item nav-item--active" href="/">Home</a> -->
+      <a class="nav-item" href="#0">Documentation</a>
+      <a class="btn btn--primary btn--black" href="#quote">Get a quote</a>
+    </nav>
+  </header>
 
-      <section class="documentation">
-        <h2>Some text to inform something</h2>
-        <p>Modern advances with the LCD computer monitors have changed a lot of that. The screen itself is flat, and very thin, needing very little desktop space, therefore giving you more room while working at your PC.</p>
+  <main class="main">
+    <figure class="main-image">
+      <img src="img/ilustration-main.svg" alt="">
+    </figure>
 
-        <div class="action-validate">
-          <img src="" alt="">
-          <p>Validate using CURP</p>
-          <p>Validate CURP and obtain personal information</p>
-          <button class="btn" type="button" name="button">Try out</button>
-        </div>
+    <div class="main-info">
+      <h1 class="title title--main">Fast & Secure Identity Verification</h1>
+      <p class="text-left">Munett develops state-of-the-art technology to push the technology boundries for fintech companies.</p>
+    </div>
+  </main>
 
-        <div class="action-validate">
-          <img src="" alt="">
-          <p>Validate using personal information</p>
-          <p>Get and verify CURP, RFC and NSS number</p>
-          <button class="btn" type="button" name="button">Try out</button>
-        </div>
-      </section>
+  <section class="about">
+    <h2 class="title">Some text to inform something</h2>
 
-      <section class="demo">
-        <div class="">
-          <h3>API Reference</h3>
-          <p>Our world-class engineering team constantly iterates upon every facet of the Stripe stack. And from Apple Pay to Bitcoin, building on Stripe means you get early access to the latest technologies.</p>
-          <p>Validation types</p>
-          <button class="btn" type="button" name="button">Using CURP</button>
-          <button class="btn btn--white" type="button" name="button">Using personal information</button>
-        </div>
-        <img src="" alt="">
-      </section>
+    <p class="subtitle">Modern advances with the LCD computer monitors have changed a lot of that. The screen itself is flat, and very thin, needing very little desktop space, therefore giving you more room while working at your PC.</p>
 
-      <section class="quote">
-        <h2>Ready to use Munett?</h2>
-        <p>Get in touch to get a quote</p>
-        <button class="btn" type="button" name="button">Text</button>
-      </section>
+    <div class="validation">
+      <div class="validation-items">
+        <img src="img/curp-process.png" alt="">
+        <h3 class="tag">Validate using CURP</h3>
+        <p class="subtitle">Validate CURP  and get personal information.</p>
+      </div>
 
-      <footer class="footer">
-        <div class="footer-logo">
-          <a class="logo logo--footer" href="#0">
-            <img src="img/logo.svg" alt="">
-          </a>
-          <p>Fast & Secure Identity verification</p>
-        </div>
+      <div class="validation-items">
+        <img src="img/id-process.png" alt="">
+        <h3 class="tag">Validate using personal information</h3>
+        <p class="subtitle">Get and validate  CURP, RFC and NSS number.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="footer-links">
-          <p>Company</p>
-          <a href="#0">About us</a>
-          <a href="#0">Careers</a>
-          <a href="#0">Terms</a>
-          <a href="#0">Privacy</a>
-        </div>
+  <section class="apiReference">
+    <div class="apiReference-info">
+      <h3 class="title title--secondary">API Reference</h3>
 
-        <div class="footer-links">
-          <p>Support</p>
-          <a href="#0">Documentation</a>
-          <a href="#0">Service</a>
-        </div>
+      <p>Our world-class engineering team constantly iterates upon every facet of the Stripe stack. And from Apple Pay to Bitcoin, building on Stripe means you get early access to the latest technologies.</p>
 
-        <div class="footer-links">
-          <p>Contact</p>
-          <a href="#0">mail@munett.com</a>
-        </div>
+      <div class="apiReference-actions">
+        <h4 class="tag">Validation types</h4>
+        
+        <button id="action-curp" class="action action--active">Using CURP</button>
+        <button id="action-info" class="action">Using personal information</button>
+      </div>
+    </div>
 
-        <div class="social">
-          <a class="social-icon" href="#">
-            <img src="fb-icon" alt="">
-          </a>
-          <a class="social-icon" href="#">
-            <img src="tw-icon" alt="">
-          </a>
-          <a class="social-icon" href="#">
-            <img src="gith-icon" alt="">
-          </a>
-        </div>
-      </footer>
+    <div class="apiReference-sliderContainer">
+      <div class="apiReference-slider">
+        <ul>
+          <li>
+            <div class="apiSlider-curp">
+              <ul>
+                <li data-nav="Option 1">
+                  <script src="https://gist.github.com/acrogenesis/65334a71dfac98032461a8f0b8996f00.js"></script>
+                </li>
 
-    </body>
-  </html>
+                <li data-nav="Option 2">
+                  <script src="https://gist.github.com/acrogenesis/65334a71dfac98032461a8f0b8996f00.js"></script>
+                </li>
+                
+                <li data-nav="Option 3">
+                  <script src="https://gist.github.com/acrogenesis/65334a71dfac98032461a8f0b8996f00.js"></script>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="apiSlider-info">
+              <ul>
+                <li data-nav="Option 1">
+                  <script src="https://gist.github.com/acrogenesis/65334a71dfac98032461a8f0b8996f00.js"></script>
+                </li>
+
+                <li data-nav="Option 2">
+                  <script src="https://gist.github.com/acrogenesis/65334a71dfac98032461a8f0b8996f00.js"></script>
+                </li>
+                
+                <li data-nav="Option 3">
+                  <script src="https://gist.github.com/acrogenesis/65334a71dfac98032461a8f0b8996f00.js"></script>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="getQuote">
+    <h2 class="title title--main">Ready to use Münett?</h2>
+    <h3 class="title">Get in touch to get a quote</h3>
+    <a class="btn btn--primary btn--green" href="#0">Get a Quote</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-column">
+      <a class="footer-logo" href="/">
+        <img src="/img/munett-logo.svg" alt="">
+      </a>
+      <p class="footer-tag">Fast & Secure Electronic Identity Verification</p>
+    </div>
+
+    <div class="footer-column">
+      <p class="footer-title">Company</p>
+      <a class="footer-link" href="#0">About us</a>
+      <a class="footer-link" href="#0">Careers</a>
+      <a class="footer-link" href="#0">Terms</a>
+      <a class="footer-link" href="#0">Privacy</a>
+    </div>
+
+    <div class="footer-column">
+      <p class="footer-title">Support</p>
+      <a class="footer-link" href="#0">Documentation</a>
+      <a class="footer-link" href="#0">Service Status</a>
+    </div>
+
+    <div class="footer-column">
+      <p class="footer-title">Contact</p>
+      <a class="footer-link" href="#0">mail@munett.com</a>
+    </div>
+
+    <div class="footer-column social">
+      <a class="social-icon" href="#">
+        <img src="img/fb-white.svg" alt="">
+      </a>
+      <a class="social-icon" href="#">
+        <img src="img/tw-white.svg" alt="">
+      </a>
+      <a class="social-icon" href="#">
+        <img src="img/github-white.svg" alt="">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.min.js" type="text/javascript"></script>
+</body>
+</html>
