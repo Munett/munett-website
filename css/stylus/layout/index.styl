@@ -1,89 +1,104 @@
 .main
   wrapped()
   height 100vh
+  background url('/img/bg-main.svg') center bottom no-repeat
+  background-size cover
   display flex
   align-items center
-  justify-content space-between
-  background url('/img/bg-main.svg') no-repeat
-  background-size cover
+  color white
   
-  +below(75rem)
-    wrapped(95%)
+  .title
+    color white
   
-  &-image
-    lost-column 5/12
-    
-    +below(55rem)
-      display none
+.main-image
+  lost-column 1/2 0
   
-  &-info 
-    lost-column 6/12
+  img
+    margin-right auto
+    margin-left auto
+    max-width 450px
     
-    +below(55rem)
-      lost-column 3/12
-      text-align center
-      width 100%
+.main-info
+  max-width 500px
     
-.about 
-  display flex 
-  flex-direction column
-  align-items center
-  height 100vh
+.about
+  wrapped()
+  padding-top 10rem
+  padding-bottom 10rem
+  text-align center
+  
+  .subtitle
+    lost-center 8/12
+    margin-top 2.5rem
+    
+.validation
+  display flex
+  align-items baseline
   justify-content center
-  margin 4rem 0
+  margin-top 4rem
   
-.documentation
-    display flex
-    align-items baseline
+  &-items
+    lost-column 1/2 2
+    
+  .subtitle
+    lost-center 1/2
+    
+  .tag
     margin-top 1rem
     
-    +below(75rem)
-      flex-direction column
-      align-items center
-    
-    &-validate
-      display flex
-      flex-direction column
-      padding 2rem 3rem
-      align-items center
-    
-.demo 
+.apiReference
   wrapped()
-  height 100vh
   display flex
-  justify-content space-between
   align-items center
-  background-image: linear-gradient(42deg, #00D6BE 0%, #00AC89 100%, #00AC89 100%);
-  
-  +below(75rem)
-    flex-direction column
-    justify-content center
-    width 100%
-    text-align center
-  
+  justify-content space-between
+  padding-top 10rem
+  padding-bottom 10rem
+  background $main-gradient
+  color white
+      
   &-info 
-    display flex 
-    flex-direction column
-    justify-content center
-    lost-column 4/12
+    lost-column 4/12 0
     
-    +below(75rem)
-      margin-bottom 3rem
-    
-  &-actions 
-    display flex 
-    flex-direction column
-    justify-content space-around
+    .title
+    .tag
+      color white
+      
+  &-actions
     margin-top 3rem
-    width 60%
-    
-    +below(75rem)
-      width 100%
+    display flex
+    flex-direction column
+    align-items flex-start
+      
+.apiReference-sliderContainer
+  display flex
+  align-items stretch
+  position relative
+  lost-column 7/12 0
   
-.quote
-  display flex 
-  height 70vh
-  justify-content center
+  &:before
+    content ''
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    transform translateY(1.5rem) translateX(1.5rem)
+    border 1px solid white
+    border-radius 4px
+
+.apiSlider-curp
+.apiSlider-info
+  padding-top 49px
+  
+.getQuote
+  wrapped()
+  padding-top 15rem
+  padding-bottom 15rem
+  display flex
   flex-direction column
+  justify-content center
   align-items center
   background url('/img/stars-ilustration.svg') 50% 25% no-repeat 
+  
+  .btn
+    margin-top 2rem

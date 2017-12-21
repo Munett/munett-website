@@ -110,7 +110,8 @@ gulp.task('server', function() {
 
   gulp.watch(paths.htmlFiles).on('change', reload);                   // Watch html
   gulp.watch(paths.stylusFiles, gulp.series('styles'));               // Watch styles
-  gulp.watch(paths.jsFiles, gulp.series('scripts'));                  // Watch scripts
+  gulp.watch(paths.jsModules, gulp.series('scripts'));                // Watch scripts
+  gulp.watch(paths.jsVendor, gulp.series('scripts'));                 // Watch scripts
   // gulp.watch(paths.imgFiles, gulp.series('images'));                  // Watch images
 });
 

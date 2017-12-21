@@ -1,37 +1,43 @@
-.btn
-  padding .7rem 1.5rem
-  text-decoration none
-  font-size 14px
-  background-color white
-  border-radius 4px
-  color $darkgreen
-  margin-top 1rem
-  box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.19);
+btn-shadow()
+  &:before
+    content ''
+    position absolute
+    height 80%
+    right 1rem
+    left 1rem
+    bottom 2px
+    box-shadow 0 5px 15px 0 rgba(0,0,0,0.4)
+    border-radius 4px
+    z-index -1
 
-  &--active
-    background-color $secondary
-    color white
+.btn
+  btn-shadow()
+  text-align center
+  position relative
+  display flex
+  align-items center
+  height 40px
+  padding-right 1.5rem
+  padding-left 1.5rem
+  font-size 12px
+  text-decoration none
+  text-transform uppercase
+  font-weight 700
+  transition 300ms all ease-in-out
   
-  &--primary
-    color white
-    text-transform uppercase
-    background-color $primary
-    border-radius 4rem
-    
-    &:hover
-      background-color $lightgreen
-      transform translateY(-1px)
-      color $darkgreen
-    
-  &--secondary
-    color white
-    text-transform uppercase
-    background-color $darkgreen
-    transition 350ms all ease-in-out
-    border-radius 4rem
-    margin-top 0
-    
-    &:hover
-      background-color $lightgreen
-      transform translateY(-1px)
-      color $darkgreen
+.btn--primary
+  color white
+  border-radius 100px
+  letter-spacing .8px
+  
+.btn--green
+  background-color $primary
+
+  &:hover
+    background-color darken($primary, 5)
+
+.btn--black
+  background-color $black
+
+  &:hover
+    background-color lighten($black, 10)

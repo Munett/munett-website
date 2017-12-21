@@ -1,11 +1,19 @@
 .mainHeader
   wrapped()
   position absolute
-  top 1rem
+  top 2rem
   right 0
   left 0
   display flex
   justify-content space-between
+  z-index 10
   
-  +below(75rem)
-    wrapped(95%)
+  +below($desktop)
+    wrapped(90%)
+
+.mainHeader-logo
+  display flex
+  width 150px
+  
+  path
+    fill white

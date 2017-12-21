@@ -1,21 +1,15 @@
 .nav
   display flex
-  min-width 500px
-  justify-content space-between
   align-items center
   
-  +below(55rem)
-    display none
-  
 .nav-item
-  text-transform uppercase
-  font-size 14px
   color white
-  letter-spacing 2px
-  border 2px solid transparent
+  font-size 14px
+  text-decoration none
+  text-transform uppercase
+  letter-spacing 0.58px
+  margin-right 3rem
   
+  &:hover
   &--active
-    font-weight 600
-  
-  &:last-child
-    margin-right 0
+    font-weight 700

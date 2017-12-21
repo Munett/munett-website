@@ -3,28 +3,48 @@
   display flex
   padding-top 3rem
   padding-bottom 3rem
-  justify-content space-between
   background-color $primary
-  align-items baseline
   
-  +below(75rem)
-    wrapped(95%)
-  
-  &-logo
+  &-column
     display flex
     flex-direction column
+    align-items flex-start
+    lost-column 2/12 0
     
-    +below(55rem)
-      display none
+    &:first-child
+      lost-column 4/12 
+
+
+.footer-logo
+  width 150px
   
-  &-links
-    display flex
-    flex-direction column
-    justify-content space-around
+  img
+    display block
+    width 100%
     
-    a 
-      padding-top 1rem
-      font-size 14px
-      
-      &:hover 
-        text-decoration underline
+.footer-tag
+  margin-top 2rem
+  max-width 180px
+  font-size 22px
+  color white
+  line-height 24px
+  
+.footer-title
+.footer-link
+  font-size 14px
+  color white
+
+.footer-title
+  margin-bottom 1.5rem
+  font-weight 700
+  letter-spacing 0.7px
+  text-transform uppercase
+
+.footer-link
+  text-decoration none
+  
+  & + &
+    margin-top .5rem
+  
+  &:hover
+    text-decoration underline
