@@ -17,8 +17,8 @@
 
     <nav class="nav">
       <!-- <a class="nav-item nav-item--active" href="/">Home</a> -->
-      <a class="nav-item" href="#0">Documentation</a>
-      <a class="btn btn--primary btn--black" href="#quote">Get a quote</a>
+      <a class="nav-item" href="https://curp.munett.com/" target="_blank">Documentation</a>
+      <a data-featherlight="#contact" class="btn btn--primary btn--black" href="#quote">Get a quote</a>
     </nav>
   </header>
 
@@ -28,15 +28,15 @@
     </figure>
 
     <div class="main-info">
-      <h1 class="title title--main">Fast & Secure Identity Verification</h1>
-      <p class="text-left">Munett develops state-of-the-art technology to push the technology boundries for fintech companies.</p>
+      <h1 class="title title--main">Fast & Secure Electronic Identity Verification</h1>
+      <p class="text-left">Munett develops powerful and flexible tools for highly scalable & efficient fintech companies.</p>
     </div>
   </main>
 
   <section class="about">
-    <h2 class="title">Some text to inform something</h2>
+    <h2 class="title">A new generation of powerful and flexible tools</h2>
 
-    <p class="subtitle">Modern advances with the LCD computer monitors have changed a lot of that. The screen itself is flat, and very thin, needing very little desktop space, therefore giving you more room while working at your PC.</p>
+    <p class="subtitle">Pull relevant financial and sensitive information for instant, frictionless verifications. Ensure credibility while eliminating needless complexity in your app, service or financial process.</p>
 
     <div class="validation">
       <div class="validation-items">
@@ -57,7 +57,7 @@
     <div class="apiReference-info">
       <h3 class="title title--secondary">API Reference</h3>
 
-      <p>Our world-class engineering team constantly iterates upon every facet of the Stripe stack. And from Apple Pay to Bitcoin, building on Stripe means you get early access to the latest technologies.</p>
+      <p>Hassle-free installation and reliability enabling robust, scalable, flexible integrations for the convenience of your company and your users.</p>
 
       <div class="apiReference-actions">
         <h4 class="tag">Validation types</h4>
@@ -110,10 +110,9 @@
     </div>
   </section>
 
-  <section class="getQuote">
+  <section class="getQuote" id="">
     <h2 class="title title--main">Ready to use Münett?</h2>
-    <h3 class="title">Get in touch to get a quote</h3>
-    <a class="btn btn--primary btn--green" href="#0">Get a Quote</a>
+    <a data-featherlight="#contact" class="btn btn--primary btn--green" href="#0">Speak with us</a>
   </section>
 
   <footer class="footer">
@@ -121,21 +120,22 @@
       <a class="footer-logo" href="/">
         <img src="/img/munett-logo.svg" alt="">
       </a>
+
       <p class="footer-tag">Fast & Secure Electronic Identity Verification</p>
     </div>
 
-    <div class="footer-column">
+    <!-- <div class="footer-column">
       <p class="footer-title">Company</p>
       <a class="footer-link" href="#0">About us</a>
       <a class="footer-link" href="#0">Careers</a>
       <a class="footer-link" href="#0">Terms</a>
       <a class="footer-link" href="#0">Privacy</a>
-    </div>
+    </div> -->
 
     <div class="footer-column">
       <p class="footer-title">Support</p>
       <a class="footer-link" href="#0">Documentation</a>
-      <a class="footer-link" href="#0">Service Status</a>
+      <!-- <a class="footer-link" href="#0">Service Status</a> -->
     </div>
 
     <div class="footer-column">
@@ -143,18 +143,47 @@
       <a class="footer-link" href="#0">mail@munett.com</a>
     </div>
 
+    <div class="footer-column"></div>
+
     <div class="footer-column social">
-      <a class="social-icon" href="#">
+      <a class="social-icon" href="https://www.facebook.com/munettmx/" target="_blank">
         <img src="img/fb-white.svg" alt="">
       </a>
-      <a class="social-icon" href="#">
+      <a class="social-icon" href="https://twitter.com/munett_mx" target="_blank">
         <img src="img/tw-white.svg" alt="">
       </a>
-      <a class="social-icon" href="#">
+      <a class="social-icon" href="https://github.com/Munett" target="_blank">
         <img src="img/github-white.svg" alt="">
       </a>
     </div>
   </footer>
+
+  <div class="contact" id="contact">
+    <h2 class="title">Hello</h2>
+
+    <p>Get in touch or something</p>
+
+    <div class="form-message form-message--error"></div>
+
+    <form  class="form form--contact" onsubmit="return sendEmail()">
+      <div class="form-inputContainer">
+        <label class="form-label" for="name">Full Name</label>
+        <input class="form-input" type="text" name="name" id="name" placeholder="Steve Jobs">
+      </div>
+
+      <div class="form-inputContainer">
+        <label class="form-label" for="mail">Email</label>
+        <input class="form-input" type="mail" name="mail" id="mail" placeholder="youremail@company.com" required>
+      </div>
+
+      <div class="form-inputContainer">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-input" name="message" id="message" placeholder="I want to use Münett! 😀" cols="50" rows="5"></textarea>
+      </div>
+
+      <input class="btn btn--primary btn--green btn--center" type="submit" value="Speak with us">
+    </form>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/main.min.js" type="text/javascript"></script>
