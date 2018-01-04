@@ -1,0 +1,49 @@
+.form
+  margin-top 2rem
+
+.form-inputContainer
+  position relative
+  
+  & + &
+    margin-top 1rem
+    
+  & + .btn
+    margin-top 2rem
+
+.form-inputContainer
+.form-input
+  width 100%
+  
+.form-input
+  padding 1rem
+  border 1px solid $primary-light
+  border-radius 5px
+  font-size 1rem
+  color $black
+  outline none
+  
+  &:focus
+    border 2px solid $primary-light
+    padding 15px
+  
+  &::placeholder
+    color rgba($black, .5)
+    line-height 1rem
+  
+.form-label
+  position absolute
+  top -6px
+  left .5rem
+  padding-right .5rem
+  padding-left .5rem
+  color $primary
+  font-size 14px
+  font-weight 700
+  background-color white
+  
+// .form-message
+//   text-transform uppercase
+//   font-weight 600
+  
+//   &--error
+//     color $red
