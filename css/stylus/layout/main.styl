@@ -1,0 +1,53 @@
+.main
+  wrapped()
+  height 100vh
+  background url('/img/bg-main.svg') center bottom no-repeat
+  background-size cover
+  display flex
+  align-items center
+  color white
+  
+  +below($desktop)
+    wrapped(90%)
+    
+  +below($tablet)
+    flex-direction column
+    justify-content center
+  
+  .title
+    color white
+  
+.main-image
+  width 100%
+
+  +above($tablet)
+    lost-column 1/2
+      
+  +below($mobile)
+    display none
+  
+  img
+    margin-right auto
+    margin-left auto
+    max-width 450px
+    max-height 450px
+    width 100%
+    
+.main-info
+  z-index 5
+  
+  +above($tablet)
+    lost-column 1/2
+  
+  +below($tablet)
+    display flex
+    flex-direction column
+    align-items center
+    text-align center
+    margin-top 2rem
+  
+  .btn
+    margin-top 1rem
+    
+    +above($tablet)
+      display none

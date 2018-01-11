@@ -1,73 +1,76 @@
-.main
-  wrapped()
-  height 100vh
-  background url('/img/bg-main.svg') center bottom no-repeat
-  background-size cover
-  display flex
-  align-items center
-  color white
-  
-  .title
-    color white
-  
-.main-image
-  lost-column 1/2 0
-  
-  img
-    margin-right auto
-    margin-left auto
-    max-width 450px
-    
-.main-info
-  max-width 500px
-    
 .about
   wrapped()
   padding-top 10rem
   padding-bottom 10rem
   text-align center
   
+  +below($desktop)
+    wrapped(90%)
+
   .subtitle
-    lost-center 8/12
+    wrapped(900px)
     margin-top 2.5rem
     
 .validation
   display flex
-  align-items baseline
-  justify-content center
+  flex-wrap wrap
   margin-top 4rem
   
-  &-items
-    lost-column 1/2 2
-    
-  .subtitle
-    lost-center 1/2
-    
   .tag
     margin-top 1rem
+
+.validation-items
+  lost-column 1/2
+  
+  +below($mobile)
+    lost-column 1 0 0
+    
+    & + &
+      margin-top 2rem
+  
+  img
+    width 100%
+    max-width 500px
     
 .apiReference
   wrapped()
-  display flex
-  align-items center
-  justify-content space-between
   padding-top 10rem
   padding-bottom 10rem
+  display flex
+  align-items center
   background $main-gradient
   color white
-      
-  &-info 
-    lost-column 4/12 0
-    
-    .title
-    .tag
-      color white
-      
-  &-actions
-    margin-top 3rem
-    display flex
+
+  .title
+  .tag
+    color white
+
+  +below($desktop)
+    wrapped(90%)
+  
+  +below(750px)
+    text-align center
     flex-direction column
-    align-items flex-start
+    
+    .apiReference-info
+    .apiReference-sliderContainer
+      lost-column 1 0 0
+
+.apiReference-info 
+  lost-column 4/12
+  
+  +below(1024px)
+    lost-column 5/12
+    
+.apiReference-actions
+  margin-top 3rem
+  display flex
+  flex-direction column
+  align-items flex-start
+  
+  +below($tablet)
+    align-items center
+    margin-bottom 2rem
       
 .apiReference-sliderContainer
   display flex
@@ -85,6 +88,9 @@
     transform translateY(1.5rem) translateX(1.5rem)
     border 1px solid white
     border-radius 4px
+    
+    +below(1024px)
+      display none
 
 .apiSlider-curp
 .apiSlider-info
@@ -98,8 +104,11 @@
   flex-direction column
   justify-content center
   align-items center
+  text-align center
   background url('/img/stars-ilustration.svg') 50% 25% no-repeat 
   
+  +below($desktop)
+    wrapped(90%)
   .btn
     margin-top 2rem
     
